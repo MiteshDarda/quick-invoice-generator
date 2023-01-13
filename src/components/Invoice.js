@@ -5,6 +5,7 @@ import LogoInput from "./LogoInput/LogoInput";
 import HeaderInfo from "./HeaderInfo/HeaderInfo";
 import Pdf from "react-to-pdf";
 import styles from "./invoice.module.css";
+import BillingInfo from "./BillingInfo/BillingInfo";
 
 const ref = React.createRef();
 
@@ -47,10 +48,11 @@ function Invoice() {
             m: 2,
           }}
         >
-          <header className="flex" style={{ width: "50rem" }}>
+          <header className="flex" style={{ width: "48rem" }}>
             <HeaderInfo />
             <LogoInput />
           </header>
+          <BillingInfo />
         </Paper>
         {/* Make a context for filename eg=> Invoice${invoice #} */}
         <Pdf targetRef={ref} filename="Invoice.pdf">
@@ -68,7 +70,7 @@ function Invoice() {
                   color: "white",
                 },
               }}
-              // className={styles.downloadBtn}
+              className={styles.downloadBtn}
             >
               <DownloadIcon fontSize="large" />
               <br />

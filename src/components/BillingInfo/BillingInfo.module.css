@@ -1,0 +1,51 @@
+.children{
+    width: 49%;
+    padding: 0.7rem;
+    background-color: #00538C;
+    border-radius: 0.5rem;
+}
+
+.children h1{
+    padding: 0.2rem;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    border-bottom: 1px solid white ;
+    width: 6rem;
+    letter-spacing: 0.1rem;
+}
+
+.children div{
+background-color: white;
+border-radius: 0.5rem;
+padding: 0.5rem;
+}
+.children div input, textarea{
+    margin: 0.2rem;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+}
+
+.flex input, .flex textarea{
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    font-weight: 300 !important;
+    transition: all 0.2s;
+    letter-spacing: 0.1rem;
+}
+.flex input:hover, .flex textarea:hover{
+    border-bottom: 1px dashed #505050;
+}
+.flex input:focus, .flex textarea:focus{
+    border-bottom: 2px dashed #002244;
+}
+
+::placeholder{
+    font-size: 0.8rem;
+    font-weight: 400;
+}
