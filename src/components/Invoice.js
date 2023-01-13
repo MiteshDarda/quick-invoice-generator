@@ -4,11 +4,27 @@ import React from "react";
 import LogoInput from "./LogoInput/LogoInput";
 import HeaderInfo from "./HeaderInfo/HeaderInfo";
 import Pdf from "react-to-pdf";
+import styles from "./invoice.module.css";
+
 const ref = React.createRef();
 
 function Invoice() {
   return (
     <div>
+      <Paper
+        ref={ref}
+        elevation={3}
+        sx={{
+          bgcolor: "white",
+          boxShadow: 1,
+          borderRadius: 2,
+          p: 2,
+          m: 2,
+        }}
+        className="flex"
+      >
+        Quick Invoice Generator
+      </Paper>
       <Box
         sx={{
           width: "100vw",
@@ -42,8 +58,8 @@ function Invoice() {
             <Button
               onClick={toPdf}
               sx={{
-                width: 30,
-                height: 60,
+                // width: 30,
+                // height: 60,
                 m: 2,
                 color: "primary.main",
                 transition: "all 0.5s",
@@ -52,8 +68,13 @@ function Invoice() {
                   color: "white",
                 },
               }}
+              // className={styles.downloadBtn}
             >
-              <DownloadIcon />
+              <DownloadIcon fontSize="large" />
+              <br />
+              <br />
+              <br />
+              Download
             </Button>
           )}
         </Pdf>

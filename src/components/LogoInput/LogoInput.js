@@ -49,6 +49,8 @@ function LogoInput() {
                 className={styles.imageUpload}
               >
                 <AddPhotoAlternateIcon />
+                <br />
+                LOGO
               </button>
             ) : (
               <div className={styles.parent}>

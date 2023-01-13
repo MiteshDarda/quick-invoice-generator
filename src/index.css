@@ -20,3 +20,9 @@ code {
   justify-content: space-around;
   
 }
+
+body{
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: #002244;
+}

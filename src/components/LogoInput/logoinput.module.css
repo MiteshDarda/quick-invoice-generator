@@ -7,6 +7,15 @@
     width: 75px;
     height: 75px;
 }
+.imageUpload:hover{
+    background-color: black;
+    border:dashed white 1px;
+    opacity: 0.8;
+    border-radius: 0.5rem;
+    color: white;
+    width: 75px;
+    height: 75px;
+}
 
 .minWidth{
     min-width: 15px !important;
