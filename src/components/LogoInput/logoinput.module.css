@@ -1,0 +1,27 @@
+.imageUpload{
+    background-color: black;
+    border:dashed white 1px;
+    opacity: 0.5;
+    border-radius: 0.5rem;
+    color: white;
+    width: 75px;
+    height: 75px;
+}
+
+.minWidth{
+    min-width: 15px !important;
+}
+
+.parent{
+    position: relative;
+}
+.children{
+    position:absolute;
+    top:20%;
+    left: 10%;
+}
+
+.hover{
+    opacity: 0.5;
+    border:dashed black 1px;
+}
