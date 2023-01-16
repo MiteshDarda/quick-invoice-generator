@@ -1,0 +1,43 @@
+.table{
+    width: 100%;
+    margin-top: 1rem;
+    border-collapse: collapse;
+}
+
+.firstRow, tfoot tr{
+    background-color: #00538C;
+    border-radius: 1rem 1rem 0 0;
+    color: white;
+    
+}
+
+th{
+    border-bottom: 1px solid black;
+}
+
+tr{
+    /* width: 100%; */
+}
+td , th{
+    padding: 0.2rem;
+    text-align: center;
+    /* width: 100%; */
+}
+
+.table input{
+    font-size: 10px;
+    text-align: center;
+    transition: all 0.3s;
+    outline: none;
+    border: none;
+    width: 8.5rem;
+}
+
+.table input:hover{
+    border-bottom: 1px dashed #505050;
+}
+.table input:focus{
+    border-bottom: 1px dashed #101010;
+
+}
+

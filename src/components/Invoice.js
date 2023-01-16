@@ -6,6 +6,8 @@ import HeaderInfo from "./HeaderInfo/HeaderInfo";
 import Pdf from "react-to-pdf";
 import styles from "./invoice.module.css";
 import BillingInfo from "./BillingInfo/BillingInfo";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import DetailsTable from "./DetailsTable/DetailsTable";
 
 const ref = React.createRef();
 
@@ -24,7 +26,10 @@ function Invoice() {
         }}
         className="flex"
       >
-        Quick Invoice Generator
+        <div className={styles.heading}>Quick Invoice Generator</div>
+        <a href="https://github.com/MiteshDarda/quick-invoice-generator">
+          <GitHubIcon />
+        </a>
       </Paper>
       <Box
         sx={{
@@ -53,6 +58,7 @@ function Invoice() {
             <LogoInput />
           </header>
           <BillingInfo />
+          <DetailsTable />
         </Paper>
         {/* Make a context for filename eg=> Invoice${invoice #} */}
         <Pdf targetRef={ref} filename="Invoice.pdf">

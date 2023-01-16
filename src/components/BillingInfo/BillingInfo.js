@@ -12,7 +12,11 @@ function BillingInfo() {
           </div>
           <div className={styles.flex}>
             <label htmlFor="your-address">Address&nbsp;</label>
-            <textarea id="your-address" placeholder="Enter Your Address" />
+            <input
+              className={styles.address}
+              id="your-address"
+              placeholder="Enter Your Address"
+            />
           </div>
           <div className={styles.flex}>
             <label htmlFor="your-pan">
@@ -45,7 +49,8 @@ function BillingInfo() {
           </div>
           <div className={styles.flex}>
             <label htmlFor="client-address">Address&nbsp;</label>
-            <textarea
+            <input
+              className={styles.address}
               id="client-address"
               placeholder="Enter Client's Address"
             />
